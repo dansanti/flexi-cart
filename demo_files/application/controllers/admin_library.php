@@ -20,7 +20,7 @@ class Admin_library extends CI_Controller {
 
 		// Load CI libraries and helpers.
 		$this->load->database();
-		$this->load->library('session');
+		$this->load->driver('session');
 		$this->load->helper('text');
  		$this->load->helper('url');
  		$this->load->helper('form');

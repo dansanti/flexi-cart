@@ -31,7 +31,7 @@ class Flexi_cart_lite_model extends CI_Model
 	public function __construct()
 	{
 		$this->load->database();
-		$this->load->library('session');
+		$this->load->driver('session');
 		$this->load->config('flexi_cart', TRUE);
 		$this->lang->load('flexi_cart');
 
