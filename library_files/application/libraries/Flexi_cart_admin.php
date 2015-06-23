@@ -27,7 +27,9 @@
 */
 
 // Load the flexi cart Lite library to allow it to be extended.
-load_class('Flexi_cart_lite', 'libraries', FALSE);
+//load_class('Flexi_cart_lite', 'libraries', FALSE);
+$CI =& get_instance();
+$CI->load->library('Flexi_cart_lite');
 
 class Flexi_cart_admin extends Flexi_cart_lite
 {

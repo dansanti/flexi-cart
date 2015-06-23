@@ -27,7 +27,9 @@
 */
 
 // Load the flexi cart Lite library to allow it to be extended.
-load_class('Flexi_cart_lite', 'libraries', FALSE);
+//load_class('Flexi_cart_lite', 'libraries', FALSE);
+$CI =& get_instance();
+$CI->load->library('Flexi_cart_lite');
 
 class Flexi_cart extends Flexi_cart_lite
 {
@@ -220,7 +222,7 @@ class Flexi_cart extends Flexi_cart_lite
 			}
 
 			// Sets / updates manually set currency data.
-			// The currency name (i.e. USD, GBP), symbol (i.e. £) and the exchange rate can all be manually updated.
+			// The currency name (i.e. USD, GBP), symbol (i.e. ï¿½) and the exchange rate can all be manually updated.
 			// This is not typically required if the database currency table is enabled.
 			// The valid currency array keys are 'name', 'exchange_rate', 'symbol', 'symbol_suffix', 'thousand_separator' and 'decimal_separator'. 
 			if (isset($settings_data['set_currency']))
