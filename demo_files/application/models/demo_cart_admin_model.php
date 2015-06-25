@@ -200,7 +200,7 @@ class Demo_cart_admin_model extends CI_Model {
 		{
 			$i++; // Identify rows using standard counting starting from 1 rather than 0.
 			$this->form_validation->set_rules('update['.$id.'][name]', 'Row #'.$i.' Location Type', 'required');
-			$this->form_validation->set_rules('update['.$id.'][parent_location_type]', 'Row #'.$i.' Parent Location Type', 'requried|integer');
+			$this->form_validation->set_rules('update['.$id.'][parent_location_type]', 'Row #'.$i.' Parent Location Type', 'required|integer');
 		}
 		
 		// Validate fields.
